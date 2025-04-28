@@ -1,7 +1,13 @@
 body {
     background-color: rgba(79, 79, 79);
-    background-image: url(images/Checker.png);
-    background-size: 1000px;
+    background-image: url(images/checkers.png);
+    background-repeat: infinite;
+    animation: backdropillusion 4s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes backdropillusion {
+    to {background-position: top 118px left 118px;}
 }
 
 p, details, summary, blockquote, h1, h2,h3, a {
