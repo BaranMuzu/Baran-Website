@@ -4,7 +4,7 @@ body {
     background-size: 1000px;
 }
 
-p, details, summary, blockquote, h1, h2, a {
+p, details, summary, blockquote, h1, h2,h3, a {
     font-family: funkin;
     color: white;
     text-shadow: 0px 2px 5px green;
