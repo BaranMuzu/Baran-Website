@@ -1,0 +1,103 @@
+body {
+    background-color: rgba(79, 79, 79);
+    background-image: url(images/Checker.png);
+    background-size: 1000px;
+}
+
+p, details, summary, blockquote, h1, h2, a {
+    font-family: funkin;
+    color: white;
+    text-shadow: 0px 2px 5px green;
+    text-decoration: none;
+    text-align: center;
+}
+
+details {
+    background-color: rgb(110, 110, 110);
+    padding: 10px;
+    border-radius: 10px;
+
+    interpolate-size: allow-keywords;
+
+    &::details-content {
+        transition:
+            block-size 1s,
+            content-visibility 1s allow-discrete;
+        overflow: hidden;
+        block-size: 0;
+    }
+
+    &[open]::details-content {
+        block-size: auto;
+    }
+}
+
+img {
+    border-radius: 10px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.background {
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+}
+
+/* NAVBAR */
+.navBar {
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    word-spacing: 10px;
+}
+
+.navBar-active {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(110, 110, 110);
+}
+
+.navBar-inactive {
+    padding: 10px;
+}
+
+/* FAN ARTS */
+.art-bg {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(101, 101, 101);
+    height: max-content;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: rgb(0, 199, 0);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+    line-height: auto;
+}
+
+.flex>div {
+    margin: 5px;
+}
+
+@font-face {
+    font-family: funkin;
+    src: url(funkin.ttf);
+}
