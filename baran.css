@@ -6,6 +6,11 @@ body {
     animation-timing-function: linear;
 }
 
+@font-face {
+    font-family: funkin;
+    src: url(funkin.ttf);
+}
+
 @keyframes backdropillusion {
     to {background-position: top 118px left 118px;}
 }
@@ -25,11 +30,11 @@ body {
     animation: fadelol 1s ease-out both;
 }
 
-p, details, summary, blockquote, h1, h2, h3, a, img, .center, .background, .navBar, .navBar-active, .navBar-inactive, .art-bg, .flex, .flex > div {
+p, details, summary, blockquote, h1, h2, h3, a, img, .center, .background, .navBar, .navBar-active, .navBar-inactive, .gallery-container {
     animation: fadelol 1s ease-out both;
 }
 
-p, details, summary, blockquote, h1, h2,h3, a {
+p, details, summary, blockquote, h1, h2, h3, a, span {
     font-family: funkin;
     color: white;
     text-shadow: 0px 2px 5px green;
@@ -41,11 +46,9 @@ details {
     background-color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 10px;
-
     outline-color: rgb(0, 255, 0);
     outline-style: solid;
     outline-width: 1px;
-
     interpolate-size: allow-keywords;
 
     &::details-content {
@@ -75,19 +78,16 @@ img {
 .background {
     margin-left: auto;
     margin-right: auto;
-
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px;
     width: max-content;
     height: max-content;
-
     outline-color: rgb(51, 255, 0);
     outline-style: solid;
     outline-width: 1px;
 }
 
-/* NAVBAR */
 .navBar {
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
@@ -96,13 +96,13 @@ img {
     width: auto;
     height: auto;
     word-spacing: 10px;
+    margin-bottom: 20px;
 }
 
 .navBar-active {
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
-
     outline-color: rgb(0, 255, 0);
     outline-style: solid;
     outline-width: 1px;
@@ -112,29 +112,73 @@ img {
     padding: 10px;
 }
 
-/* FAN ARTS */
-.art-bg {
-    padding: 10px;
-    border-radius: 10px;
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.artist-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.artist-name {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(0, 199, 0);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+    gap: 20px;
+    justify-items: center;
+}
+
+
+.art-card {
     background-color: rgb(0, 0, 0);
-    height: max-content;
-    outline-width: 3px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    
+    outline-width: 2px;
     outline-style: solid;
     outline-color: rgb(0, 199, 0);
+    
+    transition: transform 0.2s;
+    box-sizing: border-box;
 }
 
-.flex {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    padding: 10px;
-    line-height: auto;
+.art-card:hover {
+    transform: scale(1.05);
+    outline-color: rgb(51, 255, 0);
+    z-index: 10;
 }
 
-.flex>div {
-    margin: 5px;
+.art-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 10px;
 }
 
-@font-face {
-    font-family: funkin;
-    src: url(funkin.ttf);
+.art-card span, .art-card a {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgb(0, 199, 0);
+    box-shadow: 0 0 5px green;
+    margin: 40px 0;
+    opacity: 0.5;
 }
