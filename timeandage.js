@@ -25,10 +25,10 @@ function setBaranDate() {
     }
 
     if (statusImage != null) {
-        if (currentHour >= 0 && currentHour < 7) {
-            statusImage.src = "images/baransleep.png"; 
-        } else {
-            statusImage.src = "images/spin.gif";
+        const okeyuhthetarget = (currentHour >= 0 && currentHour < 7) ? "images/baransleep.png" : "images/spin.gif";
+        
+        if (!statusImage.src.includes(okeyuhthetarget)) {
+            statusImage.src = okeyuhthetarget;
         }
     }
 
