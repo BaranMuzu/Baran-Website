@@ -7,8 +7,8 @@
     <title>Baran's Website</title>
     <link rel="stylesheet" href="baran.css">
     <link rel="icon" href="images/barangafa.png" type="image/x-icon">
-	
-	<meta content="Baran's Website" property="og:title" />
+    <script src="timeandage.js"></script>
+    <meta content="Baran's Website" property="og:title" />
     <meta content="a website?! for me?! no way." property="og:description" />
     <meta content="https://baranmuzu.netlify.app/" property="og:url" />
     <meta content="https://baranmuzu.netlify.app/images/spin.gif" property="og:image" />
@@ -25,7 +25,10 @@
     <br>
 
     <div class="background">
-        <img src="images/spin.gif" width="130" class="center">
+        <img src="images/spin.gif" width="130" class="center" id="statusImage">
+        <p class="center" style="margin-top: 10px;">
+            My current local time: <b><span id="baranTime"></span></b>
+        </p>
         <h1 class="center">
             Welcome to Baran's Website
         </h1>
@@ -44,7 +47,7 @@
         <details>
             <summary>👤 About Me</summary>
             <p>
-                My name is <b>Baran</b>, I'm from <b>Türkiye</b>, and I'm a <b>content creator</b> on YouTube and other
+                My name is <b>Baran</b>, I'm <b><span id="baranAge"></span></b> years old, from <b>Türkiye</b>, and I'm a <b>content creator</b> on YouTube and other
                 platforms.
                 <br>
                 I'm also into coding, game development, and just vibing online.
@@ -104,7 +107,7 @@
         <blockquote>
             I don't know how life is going for you right now... <br>
             But if it's rough, just remember: <b>it's okay</b>. Take your time, relax, and believe in the future. <br>
-            You're strong enough to make your dreams come true — <b>never give up</b>. <br>
+            You're strong enough to make your dreams come true <b>never give up</b>. <br>
             The world is big, your time is precious, and <b>you matter</b>.
         </blockquote>
     </div>
