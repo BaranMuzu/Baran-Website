@@ -1,117 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Baran's Website</title>
+        <link rel="stylesheet" href="baran.css" />
+        <link rel="icon" href="images/barangafa.png" type="image/x-icon" />
+        <script src="timeandage.js"></script>
+        <meta content="Baran's Website" property="og:title" />
+        <meta content="a website?! for me?! no way." property="og:description" />
+        <meta content="https://baranmuzu.netlify.app/" property="og:url" />
+        <meta content="https://baranmuzu.netlify.app/images/spin.gif" property="og:image" />
+        <meta content="#00FF00" data-react-helmet="true" name="theme-color" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="Baran's Website" content="width=device-width, initial-scale=1.0">
-    <title>Baran's Website</title>
-    <link rel="stylesheet" href="baran.css">
-    <link rel="icon" href="images/barangafa.png" type="image/x-icon">
-    <script src="timeandage.js"></script>
-    <meta content="Baran's Website" property="og:title" />
-    <meta content="a website?! for me?! no way." property="og:description" />
-    <meta content="https://baranmuzu.netlify.app/" property="og:url" />
-    <meta content="https://baranmuzu.netlify.app/images/spin.gif" property="og:image" />
-    <meta content="#00FF00" data-react-helmet="true" name="theme-color" />
-</head>
+    <body>
+        <div class="navBar">
+            <a class="navBar-active">Home</a>
+            <a class="navBar-inactive" href="fan-arts.html">Fan-arts</a>
+            <a class="navBar-inactive" href="credits.html">Credits</a>
+            <a class="navBar-inactive" href="projects.html">Projects</a>
+        </div>
+        <br />
 
-<body>
-    <div class="navBar">
-        <a class="navBar-active">Home</a>
-        <a class="navBar-inactive" href="fan-arts.html">Fan-arts</a>
-        <a class="navBar-inactive" href="credits.html">Credits</a>
-        <a class="navBar-inactive" href="projects.html">Projects</a>
-    </div>
-    <br>
+        <div class="background">
+            <img src="images/spin.gif" width="130" class="center" id="statusImage" />
+            <p class="center" style="margin-top: 10px">
+                My current local time: <b><span id="baranTime"></span></b>
+            </p>
+            <h1 class="center">Welcome to Baran's Website</h1>
+            <video class="sillyVideo" controls>
+                <source src="videos/meetfuckingbaran.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <br />
 
-    <div class="background">
-        <img src="images/spin.gif" width="130" class="center" id="statusImage">
-        <p class="center" style="margin-top: 10px;">
-            My current local time: <b><span id="baranTime"></span></b>
-        </p>
-        <h1 class="center">
-            Welcome to Baran's Website
-        </h1>
-        <video width="450" height="300" controls>
-            <source src="videos/meetfuckingbaran.mp4" type="video/mp4">
-        </video>
-    </div>
-    <br>
-
-    <div class="background">
-        <h2>👋 Hey there!</h2>
-        <p>
-            Welcome to my page, looks like you want to learn more about me. So here we go! <br> <br>
-        </p>
-
-        <details>
-            <summary>👤 About Me</summary>
+        <div class="background">
+            <h2>👋 Hey there!</h2>
             <p>
-                My name is <b>Baran</b>, I'm <b><span id="baranAge"></span></b> years old, from <b>Türkiye</b>, and I'm a <b>content creator</b> on YouTube and other
-                platforms.
-                <br>
-                I'm also into coding, game development, and just vibing online.
-                <br>
+                Welcome to my page, looks like you want to learn more about me.
+                So here we go! <br />
+                <br />
             </p>
 
-            <h2>💻 I code in:</h2>
-            <a href="skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=haxe,lua,python,html,css&theme=dark" href="skillicons.dev">
-            </a>
+            <details>
+                <summary>👤 About Me</summary>
+                <p>
+                    My name is <b>Baran</b>, I'm
+                    <b><span id="baranAge"></span></b> years old, from
+                    <b>Türkiye</b>, and I'm a <b>content creator</b> on YouTube
+                    and other platforms.
+                    <br />
+                    I'm also into coding, game development, and just vibing
+                    online.
+                    <br />
+                </p>
 
-            <h2>💻 Coding Languages I want to learn:</h2>
-            <a href="skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=cs,cpp,js&theme=dark" href="skillicons.dev">
-            </a>
-        </details>
+                <h2>💻 I code in:</h2>
+                <a href="skillicons.dev">
+                    <img
+                        src="https://skillicons.dev/icons?i=haxe,lua,python,html,css&theme=dark"
+                        href="skillicons.dev"
+                    />
+                </a>
 
-        <br>
+                <h2>💻 Coding Languages I want to learn:</h2>
+                <a href="skillicons.dev">
+                    <img
+                        src="https://skillicons.dev/icons?i=cs,cpp,js&theme=dark"
+                        href="skillicons.dev"
+                    />
+                </a>
+            </details>
 
-        <details>
-            <summary>📬 My Socials</summary>
-            <h3>
-                <p> Discord: baranmuzu</p>
-                <a href="https://bsky.app/profile/baranmuzu.bsky.social">Bluesky</a> <br>
-                <a href="https://www.youtube.com/@BaranMuzu">Youtube</a> <br>
-                <a href="https://gamebanana.com/members/3018434">GameBanana</a> <br>
-                <a href="https://gamejolt.com/@BaranMuzu">Gamejolt</a> <br>
-                <a href="https://www.tiktok.com/@baranmuzu">Tiktok</a> <br>
-                <a href="https://baranmuzu.newgrounds.com/">NewGrounds</a> <br>
-                <a href="https://github.com/BaranMuzu">Github</a> <br>
-                <a href="https://scratch.mit.edu/users/BaranMuzu/">Scratch</a> <br>
-                <a href="https://baranmuzu.itch.io/">Itch Io</a> <br>
-                <a href="https://soundcloud.com/baranmuzu">Soundcloud</a>
-            </h3>
-            <a href="https://twitter.com/BaranMuzu">
-                <img
-                    src="https://img.shields.io/twitter/follow/baranmuzu?style=plastic&logo=x&labelColor=595959&color=595959">
-            </a>
-            <p> I'm usually chilling, but feel free to reach out! I'll do my best to reply when I can. </p>
-        </details>
+            <br />
 
-        <br>
+            <details>
+                <summary>📬 My Socials</summary>
+                <h3>
+                    <p>Discord: baranmuzu</p>
+                    <a href="https://bsky.app/profile/baranmuzu.bsky.social"
+                        >Bluesky</a
+                    >
+                    <br />
+                    <a href="https://www.youtube.com/@BaranMuzu">Youtube</a>
+                    <br />
+                    <a href="https://gamebanana.com/members/3018434"
+                        >GameBanana</a
+                    >
+                    <br />
+                    <a href="https://gamejolt.com/@BaranMuzu">Gamejolt</a>
+                    <br />
+                    <a href="https://www.tiktok.com/@baranmuzu">Tiktok</a>
+                    <br />
+                    <a href="https://baranmuzu.newgrounds.com/">NewGrounds</a>
+                    <br />
+                    <a href="https://github.com/BaranMuzu">Github</a> <br />
+                    <a href="https://scratch.mit.edu/users/BaranMuzu/">Scratch</a>
+                    <br />
+                    <a href="https://baranmuzu.itch.io/">Itch Io</a> <br />
+                    <a href="https://soundcloud.com/baranmuzu">Soundcloud</a>
+                </h3>
+                <a href="https://twitter.com/BaranMuzu">
+                    <img src="https://img.shields.io/twitter/follow/baranmuzu?style=plastic&logo=x&labelColor=595959&color=595959" />
+                </a>
+                <p>
+                    I'm usually chilling, but feel free to reach out! I'll do my
+                    best to reply when I can.
+                </p>
+            </details>
 
-        <details>
-            <summary>📈 Github Stats</summary>
-            <br>
-            <a href="https://github.com/anuraghazra/github-readme-stats">
-                <img src="profile/wakatime.svg" style="border-radius: 0px">
-                <br>
-                <img src="profile/stats.svg" style="border-radius: 0px">
-            </a>
-        </details>
+            <br />
 
-        <h2>
-            💬 A little message:
-        </h2>
-        <blockquote>
-            I don't know how life is going for you right now... <br>
-            But if it's rough, just remember: <b>it's okay</b>. Take your time, relax, and believe in the future. <br>
-            You're strong enough to make your dreams come true <b>never give up</b>. <br>
-            The world is big, your time is precious, and <b>you matter</b>.
-        </blockquote>
-    </div>
-    <br>
-</body>
+            <details>
+                <summary>📈 Github Stats</summary>
+                <br />
+                <a href="https://github.com/anuraghazra/github-readme-stats">
+                    <img src="profile/wakatime.svg" style="border-radius: 0px"/>
+                    <br />
+                    <img src="profile/stats.svg" style="border-radius: 0px" />
+                </a>
+            </details>
 
+            <h2>💬 A little message:</h2>
+            <blockquote>
+                I don't know how life is going for you right now... <br />
+                But if it's rough, just remember: <b>it's okay</b>. Take your
+                time, relax, and believe in the future. <br />
+                You're strong enough to make your dreams come true
+                <b>never give up</b>. <br />
+                The world is big, your time is precious, and <b>you matter</b>.
+            </blockquote>
+        </div>
+        <br />
+    </body>
 </html>

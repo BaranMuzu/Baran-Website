@@ -25,7 +25,7 @@ body {
     }
 }
 
-body, p, details, summary, blockquote, h1, h2, h3, a, span {
+* {
     font-family: 'funkin', sans-serif;
     color: white;
     text-shadow: 0px 2px 5px green;
@@ -33,7 +33,10 @@ body, p, details, summary, blockquote, h1, h2, h3, a, span {
     text-align: center;
 }
 
-.fade-in, .background, .navBar, .gallery-container {
+.fade-in,
+.background,
+.navBar,
+.gallery-container {
     animation: fadelol 1s ease-out both;
 }
 
@@ -73,7 +76,9 @@ img {
 .navBar a {
     padding: 10px;
     border-radius: 10px;
-    transition: transform 0.2s, outline 0.2s;
+    transition:
+        transform 0.2s,
+        outline 0.2s;
 }
 
 .navBar-active {
@@ -95,7 +100,9 @@ details {
     margin-bottom: 20px;
 
     &::details-content {
-        transition: block-size 1s, content-visibility 1s allow-discrete;
+        transition:
+            block-size 1s,
+            content-visibility 1s allow-discrete;
         overflow: hidden;
         block-size: 0;
     }
@@ -117,7 +124,8 @@ details {
 }
 
 .artist-name {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    word-wrap: break-word;
     margin-bottom: 20px;
     border-bottom: 2px solid rgb(0, 199, 0);
     display: inline-block;
@@ -126,7 +134,7 @@ details {
 
 .art-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 20px;
     justify-items: center;
 }
@@ -137,7 +145,9 @@ details {
     padding: 10px;
     width: 100%;
     outline: 2px solid rgb(0, 199, 0);
-    transition: transform 0.2s, outline-color 0.2s;
+    transition:
+        transform 0.2s,
+        outline-color 0.2s;
     box-sizing: border-box;
 }
 
@@ -156,7 +166,8 @@ details {
     margin-bottom: 10px;
 }
 
-.art-card span, .art-card a {
+.art-card span,
+.art-card a {
     display: block;
     font-size: 0.9rem;
     margin-top: 5px;
@@ -169,4 +180,17 @@ details {
     box-shadow: 0 0 5px green;
     margin: 40px 0;
     opacity: 0.5;
+}
+
+.sillyVideo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        padding: 10px;
+        width: 100rem;
+    }
 }
